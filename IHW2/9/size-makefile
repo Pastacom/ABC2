@@ -1,0 +1,6 @@
+size-program: size-program.o size-functions.o
+	gcc -o size-program size-program.o size-functions.o
+size-program.o:
+	as --gstabs -o size-program.o size-program.s
+size-functions.o:
+	as --gstabs -o size-functions.o size-functions.s
