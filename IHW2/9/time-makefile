@@ -1,6 +1,0 @@
-time-program: time-program.o time-functions.o
-	gcc -o time-program time-program.o time-functions.o
-time-program.o:
-	as --gstabs -o time-program.o time-program.s
-time-functions.o:
-	as --gstabs -o time-functions.o time-functions.s
